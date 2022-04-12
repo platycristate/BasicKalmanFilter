@@ -16,7 +16,7 @@ class KalmanFilter:
         self.I = np.eye(self.A.shape[0])
 
     def plot_distributions(self) -> None:
-       pass 
+        pass
 
     def predict(self, command):
         self.mean = self.A @ self.mean + self.B @ command
